@@ -1,7 +1,5 @@
 package com.learnings.multithreading_basics;
 
-import java.io.Writer;
-
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Starting the application");
