@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.learnings</groupId>
-  <artifactId>java_concepts</artifactId>
+  <artifactId>java-concepts</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>java_concepts</name>
+  <name>java-concepts</name>
   <url>http://maven.apache.org</url>
 
   <properties>
