@@ -1,4 +1,4 @@
-package com.learnings.multithreading_basics;
+package com.topics.multithreading_basics;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

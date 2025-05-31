@@ -1,4 +1,4 @@
-package com.learnings.producer_consumer;
+package com.topics.producer_consumer;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
