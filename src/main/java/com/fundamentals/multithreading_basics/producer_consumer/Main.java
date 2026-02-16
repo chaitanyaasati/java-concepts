@@ -1,4 +1,4 @@
-package com.fundamentals.producer_consumer;
+package com.fundamentals.multithreading_basics.producer_consumer;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
