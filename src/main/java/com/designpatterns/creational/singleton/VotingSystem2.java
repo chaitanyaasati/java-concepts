@@ -1,4 +1,4 @@
-package com.designpatterns.singleton;
+package com.designpatterns.creational.singleton;
 
 public class VotingSystem2 {
 

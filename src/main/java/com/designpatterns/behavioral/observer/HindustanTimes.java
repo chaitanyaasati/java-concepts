@@ -1,4 +1,4 @@
-package com.designpatterns.observer;
+package com.designpatterns.behavioral.observer;
 
 public class HindustanTimes {
 
