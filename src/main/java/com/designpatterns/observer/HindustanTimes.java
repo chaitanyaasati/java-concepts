@@ -2,10 +2,10 @@ package com.designpatterns.observer;
 
 public class HindustanTimes {
 
-    private final Publisher publisher;
+    private final Publisher<String> publisher;
 
     public HindustanTimes(){
-        publisher = new Publisher();
+        publisher = new Publisher<>();
     }
 
     public void publishNewspaper(String content){
