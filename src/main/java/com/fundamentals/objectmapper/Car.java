@@ -1,4 +1,4 @@
-package com.fundamentals.objectmapper.resources;
+package com.fundamentals.objectmapper;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;

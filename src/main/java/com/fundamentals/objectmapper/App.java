@@ -1,4 +1,4 @@
-package com.fundamentals.objectmapper.resources;
+package com.fundamentals.objectmapper;
 
 import java.io.FileInputStream;
 import java.io.IOException;
