@@ -1,26 +1,28 @@
 package com.designpatterns.observer;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Publisher {
 
-    List<Listener> listenerList;
+    private final Set<Listener<String>> listeners;
 
     public Publisher(){
-        listenerList = new ArrayList<>();
+        listeners = new HashSet<>();
     }
 
-    void addListener(Listener listener){
-        listenerList.add(listener);
+    public void addListener(Listener<String> listener){
+        if (listener == null) throw new IllegalArgumentException("Listener cannot be null");
+        listeners.add(listener);
     }
 
-    void removeListener(Listener listener){
-        listenerList.remove(listener);
+    public void removeListener(Listener<String> listener){
+        if (listener == null) throw new IllegalArgumentException("Listener cannot be null");
+        listeners.remove(listener);
     }
 
-    void notifyListeners(String data){
-        for(Listener listener : listenerList){
+    public void notifyListeners(String data){
+        for(Listener<String> listener : listeners){
             listener.update(data);
         }
     }

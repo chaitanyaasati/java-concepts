@@ -2,8 +2,8 @@ package com.designpatterns.observer;
 
 public class Main {
     public static void main(String[] args) {
-        Listener soundListener = new SoundListener();
-        Listener lightListener = new LightListener();
+        Listener<String> soundListener = new SoundListener();
+        Listener<String> lightListener = new LightListener();
         HindustanTimes hindustanTimes = new HindustanTimes();
         hindustanTimes.addListener(soundListener);
         hindustanTimes.publishNewspaper("Happy republic Day");

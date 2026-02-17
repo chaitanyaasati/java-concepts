@@ -2,7 +2,7 @@ package com.designpatterns.observer;
 
 public class HindustanTimes {
 
-    private Publisher publisher;
+    private final Publisher publisher;
 
     public HindustanTimes(){
         publisher = new Publisher();
@@ -12,11 +12,11 @@ public class HindustanTimes {
         publisher.notifyListeners(content);
     }
 
-    public void addListener(Listener listener){
+    public void addListener(Listener<String> listener){
         publisher.addListener(listener);
     }
 
-    public void removeListener(Listener listener){
+    public void removeListener(Listener<String> listener){
         publisher.removeListener(listener);
     }
 }

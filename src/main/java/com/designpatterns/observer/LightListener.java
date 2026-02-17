@@ -1,6 +1,6 @@
 package com.designpatterns.observer;
 
-public class LightListener implements Listener{
+public class LightListener implements Listener<String>{
 
     @Override
     public void update(String message) {
