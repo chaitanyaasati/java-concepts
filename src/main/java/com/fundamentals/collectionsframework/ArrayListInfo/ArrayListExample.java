@@ -94,8 +94,12 @@ public class ArrayListExample {
         System.out.println(list14.contains(125));
 
         // Java Lists are dynamic, but sometimes APIs need arrays. This method gives you an array containing the same elements in the same order.
-        List<Integer> list = Arrays.asList(1, 2, 3, 4);
-        Integer[] arr = list.toArray(new Integer[0]);
-        System.out.println(Arrays.toString(arr));
+        List<Integer> list15 = Arrays.asList(1, 2, 3, 4);
+        Integer[] arr1 = list15.toArray(new Integer[0]);
+        System.out.println(Arrays.toString(arr1));
+
+        List<Integer> list16 = Arrays.asList(1, 2, 3, 4);
+        Object[] arr2 = list16.toArray();
+        System.out.println(Arrays.toString(arr2));
     }
 }
