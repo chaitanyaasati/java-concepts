@@ -78,6 +78,8 @@ public class ArrayListExample {
             System.out.print(list11.get(index));
         }
 
+        // List implements Iterable interface so we can use for-each here
+        // Use when only reading elements, no index needed
         for(int ele : list11){
             System.out.println(ele);
         }
