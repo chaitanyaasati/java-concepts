@@ -1,8 +1,6 @@
 package com.fundamentals.collectionsframework.ArrayListInfo;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListExample {
     public static void main(String[] args) {
@@ -103,5 +101,20 @@ public class ArrayListExample {
         List<Integer> list16 = Arrays.asList(1, 2, 3, 4);
         Object[] arr2 = list16.toArray();
         System.out.println(Arrays.toString(arr2));
+
+        // Sorting
+        List<Integer> list17 = new ArrayList<>(Arrays.asList(23, 56, 123, 89));
+
+        // sorts in natural order
+        // sorts original list
+        Collections.sort(list17);
+
+        List<String> list18 = new ArrayList<>(Arrays.asList("Bat", "Banana", "Apple", "Pen"));
+        // Pass Object which implements Comparator Interface or pass lambda expression which implements compare method
+        list18.sort((s1, s2) -> s1.length() - s2.length());
+        System.out.println("After Sorting: " + list18);
+        list18.sort(new StringComparator());
+        System.out.println("After Sorting: " + list18);
     }
 }
+
