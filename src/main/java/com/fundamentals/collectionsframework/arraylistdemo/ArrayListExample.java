@@ -6,7 +6,7 @@ public class ArrayListExample {
     public static void main(String[] args) {
 
         // Methods to Initiate
-        // Default Constructor, creates an empty ArrayList with a default capacity of 10
+        // Default Constructor, creates an empty ArrayList with a default capacity of 10  but size is still 0.
         ArrayList<Integer> list1 = new ArrayList<>();
 
         // Creates list from another list
@@ -78,8 +78,22 @@ public class ArrayListExample {
 
         // List implements Iterable interface so we can use for-each here
         // Use when only reading elements, no index needed
+        // Use it when you want to read/traverse elements sequentially and do NOT need index.
         for(int ele : list11){
             System.out.println(ele);
+        }
+
+        // Don't use it when you need to modify/remove elements, it will throw ConcurrentModificationException
+//        for (int ele : list11) {
+//            list11.remove(ele); // ❌ not allowed
+//        }
+
+        // use iterator instead when you need to modify
+        Iterator<Integer> it = list11.iterator();
+        while (it.hasNext()) {
+            if (it.next() == 5) {
+                it.remove();
+            }
         }
 
         // To add one list to end of another list
@@ -95,6 +109,7 @@ public class ArrayListExample {
 
         // Java Lists are dynamic, but sometimes APIs need arrays. This method gives you an array containing the same elements in the same order.
         List<Integer> list15 = Arrays.asList(1, 2, 3, 4);
+        // toArray(new T[0])
         Integer[] arr1 = list15.toArray(new Integer[0]);
         System.out.println(Arrays.toString(arr1));
 
