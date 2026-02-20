@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.ArrayListInfo;
+package com.fundamentals.collectionsframework.arraylistdemo;
 
 import java.util.*;
 
