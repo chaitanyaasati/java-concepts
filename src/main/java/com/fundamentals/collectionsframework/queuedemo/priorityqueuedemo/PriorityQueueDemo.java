@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.queuedemo;
+package com.fundamentals.collectionsframework.queuedemo.priorityqueuedemo;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

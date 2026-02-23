@@ -1,6 +1,8 @@
-package com.fundamentals.collectionsframework.queuedemo;
+package com.fundamentals.collectionsframework.queuedemo.basicqueuedemo;
 
 import java.util.LinkedList;
+
+// LinkedList used as queue
 
 public class QueueLinkedListDemo {
     public static void main(String[] args) {

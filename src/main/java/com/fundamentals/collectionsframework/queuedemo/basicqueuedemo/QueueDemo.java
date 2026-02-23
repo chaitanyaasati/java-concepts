@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.queuedemo;
+package com.fundamentals.collectionsframework.queuedemo.basicqueuedemo;
 
 
 // Queue is based on FIFO

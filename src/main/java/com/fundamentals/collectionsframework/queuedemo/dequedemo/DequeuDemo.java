@@ -1,10 +1,7 @@
-package com.fundamentals.collectionsframework.queuedemo;
-
-import net.bytebuddy.dynamic.scaffold.MethodGraph;
+package com.fundamentals.collectionsframework.queuedemo.dequedemo;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
 
 public class DequeuDemo {
     // double-ended queue
