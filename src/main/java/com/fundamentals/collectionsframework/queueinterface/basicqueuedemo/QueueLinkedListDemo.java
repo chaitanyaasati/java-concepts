@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.queuedemo.basicqueuedemo;
+package com.fundamentals.collectionsframework.queueinterface.basicqueuedemo;
 
 import java.util.LinkedList;
 

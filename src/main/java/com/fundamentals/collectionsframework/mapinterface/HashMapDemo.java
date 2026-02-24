@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.mapdemo;
+package com.fundamentals.collectionsframework.mapinterface;
 
 import java.util.HashMap;
 import java.util.Map;

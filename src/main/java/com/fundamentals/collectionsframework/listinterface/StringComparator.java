@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.arraylistdemo;
+package com.fundamentals.collectionsframework.listinterface;
 
 import java.util.Comparator;
 

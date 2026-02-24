@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.queuedemo.dequedemo;
+package com.fundamentals.collectionsframework.queueinterface.dequedemo;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
