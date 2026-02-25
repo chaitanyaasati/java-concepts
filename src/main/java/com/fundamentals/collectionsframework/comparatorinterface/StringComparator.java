@@ -1,4 +1,4 @@
-package com.fundamentals.collectionsframework.listinterface;
+package com.fundamentals.collectionsframework.comparatorinterface;
 
 import java.util.Comparator;
 
