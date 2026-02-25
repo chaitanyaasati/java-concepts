@@ -2,6 +2,10 @@
 
 ![Collection Framework](../../../../resources/images/collection_framework.png)
 
+![Collection Framework](../../../../resources/images/collection_framework.png)
+
+![Collection Framework](../../../../resources/images/collection_framework.png)
+
 - Anything that implements Iterable can be used in for-each loop.
 
 ```java
