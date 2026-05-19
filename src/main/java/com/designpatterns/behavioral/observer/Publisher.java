@@ -1,14 +1,14 @@
 package com.designpatterns.behavioral.observer;
 
-import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 public class Publisher<T> {
 
     private final Set<Listener<T>> listeners;
 
     public Publisher(){
-        listeners = new HashSet<>();
+        listeners = new CopyOnWriteArraySet<>();
     }
 
     public void addListener(Listener<T> listener){
@@ -23,7 +23,11 @@ public class Publisher<T> {
 
     public void notifyListeners(T data){
         for(Listener<T> listener : listeners){
-            listener.update(data);
+            try {
+                listener.update(data);
+            } catch (Exception e) {
+                System.err.println("Failed to notify listener: " + e.getMessage());
+            }
         }
     }
 }
