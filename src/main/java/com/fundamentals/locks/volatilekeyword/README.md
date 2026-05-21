@@ -167,6 +167,8 @@ The Java Memory Model defines a **happens-before** relationship for `volatile`:
 
 This means: everything Thread-A did **before** writing to a `volatile` variable is guaranteed to be **visible** to Thread-B **after** Thread-B reads that same `volatile` variable.
 
+The volatile write acts as a visibility commit point — not just for itself, but for everything written before it.
+
 ```
 Thread-A:                          Thread-B:
 a = 10;           ← non-volatile
