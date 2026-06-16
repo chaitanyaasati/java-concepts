@@ -1,4 +1,4 @@
-package com.fundamentals.multithreading_basics;
+package com.fundamentals.multithreading_basics.threadcreation;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

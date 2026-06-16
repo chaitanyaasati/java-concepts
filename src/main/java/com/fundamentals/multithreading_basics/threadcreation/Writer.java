@@ -1,4 +1,4 @@
-package com.fundamentals.multithreading_basics;
+package com.fundamentals.multithreading_basics.threadcreation;
 
 public class Writer implements Runnable{
     String subject;
