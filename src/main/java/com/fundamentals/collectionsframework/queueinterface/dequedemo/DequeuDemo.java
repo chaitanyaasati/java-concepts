@@ -32,19 +32,29 @@ public class DequeuDemo {
      */
 
     public static void main(String[] args) {
-        Deque<Integer> deque1 = new ArrayDeque<>(); // faster iteration, low memory, no null allowed, circular queue
-//        Deque<Integer> deque1 = new LinkedList<>();
-        deque1.addFirst(10);
-        deque1.addLast(20);
-        deque1.offerFirst(5);
-        deque1.offerLast(25);
-        System.out.println(deque1);
-        System.out.println("First Element: " + deque1.getFirst()); // Outputs 5
-        System.out.println("Last Element: " + deque1.getLast()); // Outputs 25
-        deque1.removeFirst(); // Removes 5
-        deque1.pollLast(); // Removes 25
-
-        for(int x : deque1){
+        Deque<Integer> deque = new ArrayDeque<>(); // faster iteration, low memory, no null allowed, circular queue
+//        Deque<Integer> deque = new LinkedList<>();
+        Integer ele1 = deque.pollFirst();
+        Integer ele2 = deque.pollLast();
+        Integer ele3 = deque.peekFirst();
+        Integer ele4 = deque.peekLast();
+        System.out.println("Element Polled First: " + ele1);
+        System.out.println("Element Polled Last: " + ele2);
+        System.out.println("Element Peeked First: " + ele3);
+        System.out.println("Element Peeked Last: " + ele4);
+        deque.offerFirst(5);
+        deque.offerLast(30);
+        deque.offerLast(25);
+        System.out.println(deque);
+        Integer ele5 = deque.peekFirst();
+        Integer ele6 = deque.peekLast();
+        System.out.println("Element Peeked First: " + ele5);
+        System.out.println("Element Peeked Last: " + ele6);
+        Integer ele7 = deque.pollFirst();
+        Integer ele8 = deque.pollLast();
+        System.out.println("Element Polled First: " + ele7);
+        System.out.println("Element Polled Last: " + ele8);
+        for(int x : deque){
             System.out.println(x);
         }
     }

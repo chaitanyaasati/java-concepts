@@ -3,6 +3,7 @@
 > `PriorityQueue` is a class in Java (`java.util.PriorityQueue`).
 > It orders elements based on **natural ordering** or a **custom comparator**.
 > The **head** of the queue is always the **smallest** (min-heap by default).
+> Can use queue interface here
 ```java
 PriorityQueue<Integer> pq = new PriorityQueue<>();                          // min-heap
 PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder()); // max-heap
