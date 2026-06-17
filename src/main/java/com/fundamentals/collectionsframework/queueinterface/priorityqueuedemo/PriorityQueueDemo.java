@@ -8,9 +8,9 @@ public class PriorityQueueDemo {
     public static void main(String[] args) {
         Queue<String> pq = new PriorityQueue<>(Comparator.comparingInt(String::length).reversed());
 //        Queue<String> pq = new PriorityQueue<>(Comparator.comparingInt(String::length));
-        pq.add("Shubham");
-        pq.add("Akshit");
-        pq.add("Neha");
+        pq.offer("Akshit");
+        pq.offer("Shubham");
+        pq.offer("Neha");
         System.out.println("Priority Queue: " + pq);
 
         boolean result1 = pq.add("Akshar");
@@ -33,5 +33,14 @@ public class PriorityQueueDemo {
 
         int size = pq.size();
         System.out.println("Priority Queue Size: " + size);
+
+        String result5 = pq.peek();
+        System.out.println("Priority Queue Peeked element: " + result5);
+
+        String result6 = pq.element();
+        System.out.println("Priority Queue Element method peeked element: " + result6);
+
+        pq.clear();
+        System.out.println("Priority Queue after clear: " + pq);
     }
 }

@@ -1,6 +1,8 @@
 package com.fundamentals.collectionsframework.queueinterface.queuedemo;
 
 
+import java.util.ArrayDeque;
+
 // Queue is based on FIFO
 // Elements are added at the end and removed from the front
 
@@ -13,7 +15,9 @@ import java.util.Queue;
 
 public class QueueDemo {
     public static void main(String[] args) {
-        Queue<Integer> queue = new LinkedList<>();
+        // ArrayDeque is faster than LinkedList as it uses a resizable array, while LinkedList uses a doubly linked list
+        Queue<Integer> queue = new ArrayDeque<>();
+        // Queue<Integer> queue = new LinkedList<>();
         queue.add(899);
         queue.remove(); // throws exception if empty
 

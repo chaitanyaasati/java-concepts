@@ -10,6 +10,7 @@ public class Resource {
     public Resource(){
         this.isAvailable = false;
     }
+    
     public synchronized void produce(){
         System.out.println("Checking if element is already present");
         while(isAvailable){

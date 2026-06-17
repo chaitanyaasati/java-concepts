@@ -32,7 +32,8 @@ public class DequeuDemo {
      */
 
     public static void main(String[] args) {
-        Deque<Integer> deque = new ArrayDeque<>(); // faster iteration, low memory, no null allowed, circular queue
+      // Prefer ArrayDeque over LinkedList for Deque implementation due to better performance and lower memory overhead. 
+        Deque<Integer> deque = new ArrayDeque<>();
 //        Deque<Integer> deque = new LinkedList<>();
         Integer ele1 = deque.pollFirst();
         Integer ele2 = deque.pollLast();
