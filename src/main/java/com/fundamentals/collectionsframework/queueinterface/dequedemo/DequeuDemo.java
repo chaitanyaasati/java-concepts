@@ -55,6 +55,7 @@ public class DequeuDemo {
         Integer ele8 = deque.pollLast();
         System.out.println("Element Polled First: " + ele7);
         System.out.println("Element Polled Last: " + ele8);
+        System.out.priceln(deque.isEmpty())
         for(int x : deque){
             System.out.println(x);
         }
